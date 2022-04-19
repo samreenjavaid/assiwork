@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#arish">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <diV class="collapse navbar-collapse" id="arish">
+
+
+                <ul class="nav navbar-nav">
+                 <a style="color: red;" href="index.html" class="navbar-brand"> <b> auto world </b> </a>
+                    <li class="dropdown">
+                        <a style="color:  rgb(15, 14, 14);" class="dropdown-toggle" data-toggle="dropdown" href="#"><b> Cars
+                                Information </b> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="information.html">Honda Information</a></li>
+                            <li><a href="Marsades.html">Marsades Information</a></li>
+                            <li><a href="boogaty.html">Bugatti Information</a></li>
+                            <li><a href="vivo.html">Vivo Information</a></li>
+                            <li><a href="civic.html">Civic Information</a></li>
+                            <li><a href="wagan r .html">Wagnar Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a style="color: black;" class="dropdown-toggle" data-toggle="dropdown" href="#"><b>About
+                                Us<span class="caret"></span></b></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="about us.html">Company Status</a></li>
+
+                        </ul>
+                    <li class="dropdown">
+                        <a style="color:  black;" href="web contact.HTML"><b>Contact</b></a>
+                                
+                    <li>
+                        <a style="color:  black;" class="dropdown-toggle" data-toggle="dropdown"
+                            href="#"><b>Services<span class="caret"></span></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Online Booking</a></li>
+                            <li><a href="spray parts.html">Spare Parts</a></li>
+                            <li><a href="dilevery.html">Delivery Status</a></li>
+
+                        </ul>
+                    <li>
+                        
+                </ul>
+                
+               <div class="nav navbar-right">
+                <input type="text" name="" id="myinput" placeholder="Search Here..." class="form-control">
+               </div>
+                <!-- hunain -->
+                
+            </diV>
+        </diV>
+      
+    </nav>
+    <div class="yes">
+    <div class="container">
+                     
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="img-responsive">
+                    <div class="thumbnail">
+                           <h2>Civic</h2>                      
+                           
+                            <img src="ciciv cards.jfif" alt="" style="width:250px;height:150px">
+                        <div class="caption">
+                                    <p>civic price: 3,614,000</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-sm-4">
+                <div class="img-responsive">
+                    <div class="thumbnail">
+                           <h2>Insight</h2>
+                           
+                            <img src="insight cards.jfif" alt="" style="width:250px;height:150px">
+                        <div class="caption">
+                                     <p>insight price: 2,450,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-4">
+                <div class="img-responsive">
+                    <div class="thumbnail">
+                           <h2>BRV</h2>
+                          
+                            <img src="brv card2.jfif" alt="" style="width:250px;height:150px">
+                        <div class="caption">
+                                     <p>BRV price: 4,079,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img-responsive">
+                    <div class="thumbnail">
+                           
+                          <h2>Vezel</h2>
+                            <img src="vezel card.jfif" alt="" style="width:250px;height:150px">
+                        <div class="caption">
+                                     <p>Vesal price: 4,200,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img-responsive">
+                    <div class="thumbnail">
+                           
+                          <h2>CRV</h2>
+                            <img src="crv card.jfif" alt="" style="width:250px;height:150px">
+                        <div class="caption">
+                                     <p>CRV price: 10,700,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+</div>
+</div>
+       
+        <script>
+            $(document).ready(function(){
+                $("#myinput").on('keyup',function(){
+                    var value = $(this).val().toLowerCase();
+
+                    $("#mybody div").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                    })
+                })
+            })
+        </script>
+</body>
+</html>

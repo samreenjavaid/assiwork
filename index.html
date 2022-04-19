@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   
+    <link rel="stylesheet" href="index.css">
+    <style>
+        button{
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#arish">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <diV class="collapse navbar-collapse" id="arish">
+
+
+                <ul class="nav navbar-nav">
+                 <a style="color: red;" href="index.html" class="navbar-brand"> <b> auto world </b> </a>
+                    <li class="dropdown">
+                        <a style="color:  rgb(15, 14, 14);" class="dropdown-toggle" data-toggle="dropdown" href="#"><b> Cars
+                                Information </b> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="information.html">Honda Information</a></li>
+                            <li><a href="Marsades.html">Marsades Information</a></li>
+                            <li><a href="boogaty.html">Bugatti Information</a></li>
+                            <li><a href="vivo.html">Vivo Information</a></li>
+                            <li><a href="civic.html">Civic Information</a></li>
+                            <li><a href="wagan r .html">Wagnar Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a style="color: black;" class="dropdown-toggle" data-toggle="dropdown" href="#"><b>About
+                                Us<span class="caret"></span></b></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="about us.html">Company Status</a></li>
+
+                        </ul>
+                    <li class="dropdown">
+                        <a style="color:  black;" href="web contact.HTML"><b>Contact</b></a>
+                                
+                    <li>
+                        <a style="color:  black;" class="dropdown-toggle" data-toggle="dropdown"
+                            href="#"><b>Services<span class="caret"></span></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Online Booking</a></li>
+                            <li><a href="spray parts.html">Spary Parts</a></li>
+                            <li><a href="dilevery.html">Delivery Status</a></li>
+
+                        </ul>
+                    <li>
+                        
+                </ul>
+                
+               <div class="nav navbar-right">
+                <input type="text" name="" id="myinput" placeholder="Search Here..." class="form-control">
+               </div>
+                <!-- hunain -->
+                
+            </diV>
+        </diV>
+      
+    </nav>
+   
+    <script>
+        $(document).ready(function(){
+            $("#myinput").on('keyup',function(){
+                var value = $(this).val().toLowerCase();
+
+                $("#mybody div").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                })
+            })
+        })
+    </script>
+     <div id="mybody">
+    <div class="container-fluid">
+        <div class="carousel slide" id="mycarousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+                <li data-target="#mycarousel" data-slide-to="5"></li>
+                <li data-target="#mycarousel" data-slide-to="6"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="hondasl.jpg" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>HONDA</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="4x4sl.jpg" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>VIVO 4x4</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="bmwsl.jpg" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>BMW </h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="mustsl.webp" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>MUSTANG</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="civicsl.jpg" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>HONDA CIVIC</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="gmcsl.webp" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>GMC 4x4</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="boogatisl.jpg" alt="" style="width: 100%; height: 90vh;">
+                    <div class="carousel-caption">
+                        <h1>BOOGATY</h1>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        <br>
+        <br>
+       
+        <div class="container" >
+                     
+            <br>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-responsive">
+                        <div class="thumbnail">
+                               
+                               <center> <a class="onclick" href="search.html" style="font-size: 50px; color: #c00;">HONDA</a></center>
+                                <img src="honda logo.png" alt="" style="width:250px;height:150px">
+                            <div class="caption">
+                                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-sm-4">
+                    <div class="img-responsive">
+                        <div class="thumbnail">
+                               
+                               <center> <a class="onclick" href="toyota.html" style="font-size: 50px; color: #c00;">TOYOTA</a></center>
+                                <img src="toyota logo.png" alt="" style="width:250px;height:150px">
+                            <div class="caption">
+                                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4">
+                    <div class="img-responsive">
+                        <div class="thumbnail">
+                               
+                               <center> <a class="onclick" href="hyundia.html" style="font-size: 50px; color: #c00;">HYUNDIA</a></center>
+                                <img src="hondia logo.png" alt="" style="width:250px;height:150px">
+                            <div class="caption">
+                                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </div>
+   
+        <div class="hunain">
+            <center>
+                <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(230, 8, 8);">
+                    <em> Find Your cars </em> </h1>
+            <div class="btn_1" style="margin-left: 50px;">
+            <button class="active"><a style="color: white; background-color: #c00;" class="btn btn-default"
+                    href="img1.html"> <b> HONDA CITY </b> </a></button>
+            <button class="btn btn-default"><a style="color: #c00;" href="vivo.html"> <b> VIVO 4x4 </b> </a></button>
+            <button class="btn btn-default"><a style="color: #c00;" href="wagan r .html"> <b> WAGON R</b> </a></button>
+            <button class="btn btn-default"><a style="color: #c00;" href="Marsades.html"> <b>MARSADES </b> </a></button>
+            <button class="btn btn-default"><a style="color: #c00;" href="civic.html"> <b> HONDA CIVIC </b>
+                </a></button>
+            <button class="btn btn-default"><a style="color: #c00;" href="boogaty.html"> <b> BOOGATY </b> </a></button>
+            <br><br>
+        </div>
+        </div>
+    </center>
+    </div>
+</div>
+<!-- arish -->
+<br>
+<br>
+<center>
+
+<div class="row">
+    <div class="col-sm-4">
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="card hond.jfif" alt="">
+                    <h2></h2>
+                </div>
+                <div class="flip-box-back">
+                    <img src="logo card honda.jfif" alt="">
+                    <h1> <a href=""></a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="hyn card.jfif" alt="">
+                    <h2></h2>
+                </div>
+                <div class="flip-box-back">
+                    <img src="hylogo.jfif" alt="">
+                    <h1> <a href="">  </a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="toy card pic.jfif" alt="">
+                    <h2></h2>
+                </div>
+                <div class="flip-box-back">
+                    <img src="to cardlogo.jfif" alt="">
+                    <h1> <a href="/">
+                        </a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</center>
+<br>
+<br>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about us.html">about us</a></li>
+                    <li><a href="contact.html">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">afffiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Cars sellers</h4>
+                <ul>
+                    <li><a href="#">Honda cars</a></li>
+                    <li><a href="#">Toyota cars</a></li>
+                    <li><a href="#">Hyundai cars</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+             <div class="social-links"> 
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>  
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>                       
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
